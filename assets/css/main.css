@@ -1,1 +1,63 @@
+@import url("variables.css");
+@import url("responsive.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+
+/* Reset */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:var(--font-body);
+
+    color:var(--color-text);
+
+    background:var(--color-background);
+
+    line-height:1.6;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+button{
+    font:inherit;
+    cursor:pointer;
+    border:none;
+}
+
+section{
+
+    padding:var(--space-xl) var(--space-sm);
+
+}
+
+.container{
+
+    width:min(100%, var(--content-width));
+
+    margin-inline:auto;
+
+}
