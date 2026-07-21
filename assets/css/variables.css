@@ -1,1 +1,54 @@
+/* ==========================
+   Chapman Naz Design System
+   ========================== */
 
+:root {
+
+    /* Colors */
+    --color-primary: #2E6B4A;
+    --color-primary-dark: #24563B;
+    --color-secondary: #7FA37C;
+    --color-accent: #D4A44B;
+
+    --color-background: #FAFAF8;
+    --color-surface: #FFFFFF;
+
+    --color-text: #222222;
+    --color-text-light: #666666;
+
+    --color-border: #E7E7E7;
+
+    /* Typography */
+    --font-heading: "Poppins", sans-serif;
+    --font-body: "Inter", sans-serif;
+
+    --fs-xs: 0.8rem;
+    --fs-sm: 0.95rem;
+    --fs-md: 1rem;
+    --fs-lg: 1.25rem;
+    --fs-xl: 2rem;
+    --fs-2xl: 3rem;
+
+    /* Spacing */
+    --space-xs: .5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 6rem;
+
+    /* Radius */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0,0,0,.06);
+    --shadow-md: 0 8px 24px rgba(0,0,0,.08);
+
+    /* Layout */
+    --content-width: 1200px;
+
+    /* Animation */
+
+    --transition: .25s ease;
+}
