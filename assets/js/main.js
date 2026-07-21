@@ -1,15 +1,33 @@
-const toggle = document.getElementById("menuToggle");
-const menu = document.getElementById("navMenu");
+async function loadSiteData() {
 
-toggle.addEventListener("click", () => {
+    const response = await fetch("assets/data/site.json");
 
-    menu.classList.toggle("open");
+    const data = await response.json();
 
-    toggle.textContent =
-        menu.classList.contains("open")
-            ? "✕"
-            : "☰";
+    document.getElementById("church-name").textContent =
+        data.church.name;
 
-});
+    document.getElementById("church-tagline").textContent =
+        data.church.tagline;
 
-<script src="assets/js/main.js"></script>
+    const container =
+        document.getElementById("service-times");
+
+    data.serviceTimes.forEach(service => {
+
+        const card = document.createElement("div");
+
+        card.className = "info-card";
+
+        card.innerHTML = `
+            <span class="label">${service.title}</span>
+            <strong>${service.time}</strong>
+        `;
+
+        container.appendChild(card);
+
+    });
+
+}
+
+loadSiteData();
