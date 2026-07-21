@@ -1,19 +1,16 @@
 @media (min-width:768px){
-    .menu-toggle{
-        display:none;
-    }
 
-    .nav-menu{
-        display:flex;
-        align-items:center;
-        gap:2rem;
-    }
+    .hero-buttons{
 
-    .nav-menu.open{
-        position:static;
         flex-direction:row;
-        padding:0;
-        box-shadow:none;
-        width:auto;
+        justify-content:center;
+
     }
+
+    .service-times{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
 }
