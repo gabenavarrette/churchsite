@@ -228,6 +228,10 @@ a {
    ================================================== */
 
 
+/* ==================================================
+   Hero
+   ================================================== */
+
 .hero {
 
     min-height: 85vh;
@@ -238,13 +242,29 @@ a {
 
     text-align: center;
 
-}
+    position: relative;
 
+    background-image: 
+        linear-gradient(
+            rgba(0,0,0,.45),
+            rgba(0,0,0,.45)
+        ),
+        url("../images/hero.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+}
 
 
 .hero-content {
 
     max-width: 700px;
+
+    margin: auto;
 
 }
 
@@ -252,7 +272,7 @@ a {
 
 .eyebrow {
 
-    color: var(--green);
+    color: #D8EAD8;
 
     text-transform: uppercase;
 
@@ -275,6 +295,7 @@ a {
     line-height: 1.1;
 
     margin-bottom: 1rem;
+   color: white;
 
 }
 
@@ -284,7 +305,7 @@ a {
 
     font-size: 1.25rem;
 
-    color: var(--text-light);
+    color: rgba(255,255,255,.9);
 
     margin-bottom: 2rem;
 
@@ -306,7 +327,7 @@ a {
 
 .hero-info div {
 
-    background: var(--white);
+    background: rgba(255,255,255,.92);
 
     padding: 1.5rem;
 
