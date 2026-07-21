@@ -1,33 +1,45 @@
-async function loadSiteData() {
+async function loadLatestSermon(){
 
-    const response = await fetch("assets/data/site.json");
+    const response =
+        await fetch("assets/data/latest-sermon.json");
 
-    const data = await response.json();
-
-    document.getElementById("church-name").textContent =
-        data.church.name;
-
-    document.getElementById("church-tagline").textContent =
-        data.church.tagline;
+    const sermon =
+        await response.json();
 
     const container =
-        document.getElementById("service-times");
+        document.getElementById("latest-sermon-card");
 
-    data.serviceTimes.forEach(service => {
+    container.innerHTML = `
 
-        const card = document.createElement("div");
+        <div class="sermon-card">
 
-        card.className = "info-card";
+            <img
+                src="https://img.youtube.com/vi/${sermon.youtubeId}/maxresdefault.jpg"
+                alt="${sermon.title}">
 
-        card.innerHTML = `
-            <span class="label">${service.title}</span>
-            <strong>${service.time}</strong>
-        `;
+            <div class="sermon-content">
 
-        container.appendChild(card);
+                <p class="series">${sermon.series}</p>
 
-    });
+                <h3>${sermon.title}</h3>
+
+                <p>${sermon.passage}</p>
+
+                <a
+                    class="button primary"
+                    target="_blank"
+                    href="https://youtu.be/${sermon.youtubeId}">
+
+                    Watch Now
+
+                </a>
+
+            </div>
+
+        </div>
+
+    `;
 
 }
 
-loadSiteData();
+loadLatestSermon();
