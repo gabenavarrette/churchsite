@@ -1,9 +1,19 @@
-/* Tablet */
 @media (min-width:768px){
+    .menu-toggle{
+        display:none;
+    }
 
-}
+    .nav-menu{
+        display:flex;
+        align-items:center;
+        gap:2rem;
+    }
 
-/* Desktop */
-@media (min-width:1024px){
-
+    .nav-menu.open{
+        position:static;
+        flex-direction:row;
+        padding:0;
+        box-shadow:none;
+        width:auto;
+    }
 }
