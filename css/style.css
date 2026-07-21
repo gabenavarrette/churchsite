@@ -1,0 +1,516 @@
+/* ==================================================
+   Chapman Naz Website Styles
+   ================================================== */
+
+
+/* ==================================================
+   Variables
+   ================================================== */
+
+:root {
+
+    /* Colors */
+
+    --green: #2E6B4A;
+    --green-dark: #245239;
+    --green-light: #E8F1EB;
+
+    --gold: #C99A3A;
+
+    --background: #FAFAF7;
+    --white: #FFFFFF;
+
+    --text: #222222;
+    --text-light: #666666;
+
+    --border: #E5E5E5;
+
+
+    /* Typography */
+
+    --heading-font: "Poppins", sans-serif;
+    --body-font: "Inter", sans-serif;
+
+
+    /* Spacing */
+
+    --small: 1rem;
+    --medium: 2rem;
+    --large: 4rem;
+
+
+    /* Other */
+
+    --radius: 16px;
+    --shadow: 0 10px 30px rgba(0,0,0,.08);
+
+    --max-width: 1100px;
+
+}
+
+
+
+
+
+/* ==================================================
+   Reset
+   ================================================== */
+
+
+*,
+*::before,
+*::after {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+
+body {
+
+    font-family: var(--body-font);
+
+    color: var(--text);
+
+    background: var(--background);
+
+    line-height: 1.6;
+
+}
+
+
+
+img {
+
+    max-width: 100%;
+
+}
+
+
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+
+
+
+/* ==================================================
+   Layout
+   ================================================== */
+
+
+.container {
+
+    width: min(90%, var(--max-width));
+
+    margin: auto;
+
+}
+
+
+
+.section {
+
+    padding: var(--large) 0;
+
+}
+
+
+
+.section.light {
+
+    background: var(--green-light);
+
+}
+
+
+
+
+
+/* ==================================================
+   Navigation
+   ================================================== */
+
+
+.header {
+
+    background: var(--white);
+
+    border-bottom: 1px solid var(--border);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 10;
+
+}
+
+
+
+.nav-container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    height: 75px;
+
+}
+
+
+
+.logo {
+
+    font-family: var(--heading-font);
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
+    color: var(--green);
+
+}
+
+
+
+.nav {
+
+    display: flex;
+
+    gap: 1.5rem;
+
+}
+
+
+
+.nav a {
+
+    font-weight: 500;
+
+    color: var(--text-light);
+
+}
+
+
+
+.nav a:hover {
+
+    color: var(--green);
+
+}
+
+
+
+
+
+/* ==================================================
+   Hero
+   ================================================== */
+
+
+.hero {
+
+    min-height: 85vh;
+
+    display: flex;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+
+.hero-content {
+
+    max-width: 700px;
+
+}
+
+
+
+.eyebrow {
+
+    color: var(--green);
+
+    text-transform: uppercase;
+
+    letter-spacing: .1em;
+
+    font-weight: 600;
+
+    margin-bottom: 1rem;
+
+}
+
+
+
+.hero h1 {
+
+    font-family: var(--heading-font);
+
+    font-size: clamp(2.8rem, 8vw, 5rem);
+
+    line-height: 1.1;
+
+    margin-bottom: 1rem;
+
+}
+
+
+
+.hero-text {
+
+    font-size: 1.25rem;
+
+    color: var(--text-light);
+
+    margin-bottom: 2rem;
+
+}
+
+
+
+.hero-info {
+
+    display: grid;
+
+    gap: 1rem;
+
+    margin-bottom: 2rem;
+
+}
+
+
+
+.hero-info div {
+
+    background: var(--white);
+
+    padding: 1.5rem;
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+}
+
+
+
+.hero-info strong {
+
+    display: block;
+
+    font-family: var(--heading-font);
+
+}
+
+
+
+.hero-info span {
+
+    color: var(--text-light);
+
+}
+
+
+
+.button {
+
+    display: inline-block;
+
+    background: var(--green);
+
+    color: white;
+
+    padding: 1rem 2rem;
+
+    border-radius: 50px;
+
+    font-weight: 600;
+
+    transition: .25s ease;
+
+}
+
+
+
+.button:hover {
+
+    background: var(--green-dark);
+
+}
+
+
+
+
+
+/* ==================================================
+   Typography
+   ================================================== */
+
+
+h2 {
+
+    font-family: var(--heading-font);
+
+    font-size: 2rem;
+
+    margin-bottom: 1.5rem;
+
+}
+
+
+
+h3 {
+
+    font-family: var(--heading-font);
+
+    margin-bottom: .75rem;
+
+}
+
+
+
+p {
+
+    color: var(--text-light);
+
+}
+
+
+
+
+
+/* ==================================================
+   Cards
+   ================================================== */
+
+
+.cards {
+
+    display: grid;
+
+    gap: 1.5rem;
+
+}
+
+
+
+.card {
+
+    background: var(--white);
+
+    padding: 2rem;
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+}
+
+
+
+
+
+/* ==================================================
+   Service Box
+   ================================================== */
+
+
+.service-box {
+
+    background: var(--white);
+
+    padding: 2rem;
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+}
+
+
+
+
+
+/* ==================================================
+   Footer
+   ================================================== */
+
+
+.footer {
+
+    background: #1F3027;
+
+    color: white;
+
+    padding: 2rem 0;
+
+    text-align: center;
+
+}
+
+
+
+.footer p {
+
+    color: rgba(255,255,255,.75);
+
+}
+
+
+
+
+
+/* ==================================================
+   Desktop Layout
+   ================================================== */
+
+
+@media (min-width: 768px) {
+
+
+    .hero-info {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .cards {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+
+    .hero {
+
+        min-height: 90vh;
+
+    }
+
+
+}
