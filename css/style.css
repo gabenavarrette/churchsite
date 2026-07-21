@@ -72,148 +72,78 @@ a {
    ================================================== */
 
 .container {
-
     width: min(90%, var(--max-width));
-
     margin: auto;
-
 }
-
-
 
 .section {
-
     padding: var(--large) 0;
-
 }
-
-
 
 .section.light {
-
     background: var(--green-light);
-
 }
-
-
-
-
 
 /* ==================================================
    Navigation
    ================================================== */
 
-
 .header {
-
     background: var(--white);
-
     border-bottom: 1px solid var(--border);
-
     position: sticky;
-
     top: 0;
-
     z-index: 10;
-
 }
-
-
 
 .nav-container {
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     height: 75px;
-
 }
-
-
 
 .logo {
-
     font-family: var(--heading-font);
-
     font-size: 1.4rem;
-
     font-weight: 700;
-
     color: var(--green);
-
 }
-
-
 
 .nav {
-
     display: flex;
-
     gap: 1.5rem;
-
 }
-
-
 
 .nav a {
-
     font-weight: 500;
-
     color: var(--text-light);
-
 }
-
-
 
 .nav a:hover {
-
     color: var(--green);
-
 }
-
-
-
-
-
-/* ==================================================
-   Hero
-   ================================================== */
-
 
 /* ==================================================
    Hero
    ================================================== */
 
 .hero {
-
     min-height: 85vh;
-
     display: flex;
-
     align-items: center;
-
     text-align: center;
-
     position: relative;
-
     background-image: 
         linear-gradient(
             rgba(0,0,0,.45),
             rgba(0,0,0,.45)
         ),
-        url("../images/hero.jpg");
-
+        /* url("../images/hero.jpg"); */
     background-size: cover;
-
     background-position: center;
-
     color: white;
-
 }
-
 
 .hero-content {
 
