@@ -281,3 +281,55 @@ section{
     gap:1rem;
 
 }
+
+/* ==========================
+   Latest Sermon
+========================== */
+
+#latest-sermon {
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-xl);
+}
+
+#latest-sermon h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-align: center;
+    margin-bottom: var(--space-md);
+}
+
+.sermon-card {
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.sermon-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.sermon-content {
+    padding: var(--space-md);
+}
+
+.series {
+    color: var(--color-primary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.5rem;
+}
+
+.sermon-content h3 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.sermon-content p {
+    color: var(--color-text-light);
+    margin-bottom: 1.5rem;
+}
