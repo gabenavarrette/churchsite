@@ -1,16 +1,13 @@
-@media (min-width:768px){
-
-    .hero-buttons{
-
-        flex-direction:row;
-        justify-content:center;
-
+@media (min-width: 768px) {
+    .sermon-card {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: stretch;
     }
 
-    .service-times{
-
-        grid-template-columns:repeat(2,1fr);
-
+    .sermon-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-
 }
