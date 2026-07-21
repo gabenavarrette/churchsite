@@ -1,112 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Basic Page Setup -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapman Naz</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Page Title -->
+    <title>Chapman Naz | Welcome Home</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 </head>
-<header class="site-header">
-    <div class="container nav-container">
 
-        <a href="index.html" class="logo">
-            Chapman Naz
-        </a>
 
-        <button
-            class="menu-toggle"
-            id="menuToggle"
-            aria-label="Open Menu">
+<body>
 
-            ☰
+    <!-- =========================
+         Navigation
+    ========================== -->
 
-        </button>
+    <header class="header">
 
-        <nav class="nav-menu" id="navMenu">
+        <div class="container nav-container">
 
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="sermons.html">Sermons</a>
-            <a href="plan-your-visit.html">Visit</a>
-            <a href="contact.html">Contact</a>
-
-            <a
-                class="button primary"
-                href="plan-your-visit.html">
-
-                Plan Your Visit
-
+            <a href="#" class="logo">
+                Chapman Naz
             </a>
 
-        </nav>
 
-    </div>
-</header>
+            <nav class="nav">
 
-<main>
+                <a href="#about">About</a>
+                <a href="#visit">Visit</a>
+                <a href="#contact">Contact</a>
 
-<section class="hero">
-
-    <div class="container">
-
-        <div class="hero-content">
-
-            <span class="eyebrow">
-                You're Invited
-            </span>
-
-            <h1 id="church-name"></h1>
-
-            <p
-                class="hero-text"
-                id="church-tagline">
-            </p>
-
-            <div
-                class="service-times"
-                id="service-times">
-            </div>
-
-            <div class="hero-buttons">
-
-                <a
-                    href="plan-your-visit.html"
-                    class="button primary">
-
-                    Plan Your Visit
-
-                </a>
-
-                <a
-                    href="#latest-sermon"
-                    class="button secondary">
-
-                    Watch Latest Sermon
-
-                </a>
-
-            </div>
+            </nav>
 
         </div>
 
-    </div>
+    </header>
 
-</section>
 
-<section id="latest-sermon">
 
-    <div class="container">
+    <!-- =========================
+         Hero Section
+    ========================== -->
 
-        <h2>Latest Message</h2>
+    <main>
 
-        <div id="latest-sermon-card"></div>
+        <section class="hero">
 
-    </div>
+            <div class="container hero-content">
 
-</section>
+                <p class="eyebrow">
+                    You're Invited
+                </p>
 
-</main>
+
+                <h1>
+                    Welcome Home.
+                </h1>
+
+
+                <p class="hero-text">
+                    A community following Jesus together.
+                </p>
+
+
+                <div class="hero-info">
+
+                    <div>
+                        <strong>Sunday Worship</strong>
+                        <span>10:00 AM</span>
+                    </div>
+
+
+                    <div>
+                        <strong>Location</strong>
+                        <span>Chapman, Kansas</span>
+                    </div>
+
+                </div>
+
+
+                <a href="#visit" class="button">
+                    Plan Your Visit
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+
+
+        <!-- =========================
+             About Section
+        ========================== -->
+
+        <section id="about" class="section">
+
+            <div class="container">
+
+                <h2>
+                    Who We Are
+                </h2>
+
+
+                <p>
+                    We are a church family seeking to know Jesus,
+                    grow together, and share His love with our community.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+
+        <!-- =========================
+             What To Expect
+        ========================== -->
+
+        <section id="visit" class="section light">
+
+            <div class="container">
+
+                <h2>
+                    What To Expect
+                </h2>
+
+
+                <div class="cards">
+
+
+                    <div class="card">
+
+                        <h3>
+                            Worship
+                        </h3>
+
+                        <p>
+                            Join us as we worship God through music,
+                            prayer, and teaching from Scripture.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="card">
+
+                        <h3>
+                            Community
+                        </h3>
+
+                        <p>
+                            Find a place to belong and grow with others
+                            who are seeking Christ.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="card">
+
+                        <h3>
+                            Kids
+                        </h3>
+
+                        <p>
+                            Your children are welcome and valued as part
+                            of our church family.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- =========================
+             Service Times
+        ========================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <h2>
+                    Join Us This Sunday
+                </h2>
+
+
+                <div class="service-box">
+
+                    <p>
+                        <strong>Sunday School</strong>
+                        <br>
+                        9:00 AM
+                    </p>
+
+
+                    <p>
+                        <strong>Worship Service</strong>
+                        <br>
+                        10:00 AM
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- =========================
+             Contact
+        ========================== -->
+
+        <section id="contact" class="section light">
+
+            <div class="container">
+
+                <h2>
+                    Contact Us
+                </h2>
+
+
+                <p>
+                    Chapman Naz<br>
+                    Chapman, Kansas
+                </p>
+
+
+                <p>
+                    We'd love to answer any questions you have.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+
+
+    <!-- =========================
+         Footer
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 Chapman Naz. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
 </html>
-
-<script src="assets/js/main.js"></script>
-<script src="assets/js/latest-sermon.js"></script>
