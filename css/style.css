@@ -10,111 +10,66 @@
 :root {
 
     /* Colors */
-
     --green: #2E6B4A;
     --green-dark: #245239;
     --green-light: #E8F1EB;
-
     --gold: #C99A3A;
-
     --background: #FAFAF7;
     --white: #FFFFFF;
-
     --text: #222222;
     --text-light: #666666;
-
     --border: #E5E5E5;
 
-
     /* Typography */
-
     --heading-font: "Poppins", sans-serif;
     --body-font: "Inter", sans-serif;
 
-
     /* Spacing */
-
     --small: 1rem;
     --medium: 2rem;
     --large: 4rem;
 
-
     /* Other */
-
     --radius: 16px;
     --shadow: 0 10px 30px rgba(0,0,0,.08);
-
     --max-width: 1100px;
-
 }
-
-
-
-
 
 /* ==================================================
    Reset
    ================================================== */
 
-
 *,
 *::before,
 *::after {
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-
-
 
 html {
-
     scroll-behavior: smooth;
-
 }
-
-
 
 body {
-
     font-family: var(--body-font);
-
     color: var(--text);
-
     background: var(--background);
-
     line-height: 1.6;
-
 }
-
-
 
 img {
-
     max-width: 100%;
-
 }
-
-
 
 a {
-
     text-decoration: none;
-
     color: inherit;
-
 }
-
-
-
-
 
 /* ==================================================
    Layout
    ================================================== */
-
 
 .container {
 
