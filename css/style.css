@@ -186,6 +186,7 @@ a {
 }
 
 .hero-info strong {
+    color: black;
     display: block;
     font-family: var(--heading-font);
 }
